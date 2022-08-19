@@ -10,9 +10,9 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-header {
+.header-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: #1f2937;
     flex-wrap: wrap;
@@ -22,21 +22,19 @@ header {
     color: #e5e7eb;
     font-size: 24px;
     font-weight: 900;
-    width: 570px;
+}
+
+.primary-nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 a {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
-}
-
-.primary-nav {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    width: 600px;
-    display: flex;
-    justify-content: flex-end;
 }
 
 nav > ul {
@@ -56,10 +54,9 @@ footer {
     color:#e5e7eb;
 }
 
-.hero {
-    background-color: #1f2937;
+.hero-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -67,33 +64,35 @@ footer {
     display: flex;
     padding-top: 32px;
     padding-bottom: 64px;
+    padding-left: 8px;
+    padding-right: 8px;
     color: #e5e7eb;
     justify-content: space-evenly;
-    align-items: center;
     flex-wrap: wrap;
+    background-color: #1f2937;
+    align-content: flex-start;
 }
 
 .awesome-content {
-    box-sizing: border-box;
     margin-top: 0;
     display: flex;
-    flex-wrap: wrap;
+    max-width: 600px;
     flex-direction: column;
+    flex-wrap: wrap;
     font-size: 18px;
-    flex: 0 0 auto;
-    width: 570px;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 
 }
 
 .image-placeholder {
     box-sizing: border-box;
-    width: 600px;
     text-align: center;
     background-color: grey;
     border: 2px solid #3882f6;
-    padding-top: 137px;
-    padding-bottom: 137px;
+    padding: 164px;
     border-radius: 16px;
+    max-width: 100%;
 }
 
 .cta-button {
@@ -107,16 +106,19 @@ footer {
     margin-bottom: 32px;
     font-weight: 900;
     color:#e5e7eb;
-    width: max-content;
+    max-width: max-content;
     font-size: 16px;
 }
 
-h1 {
+.hero-cta-button {
+    align-self: flex-start;
+}
+
+.awesome-container h1 {
     font-size: 48px;
-    padding: 0;
-    margin: 0;
     color: #f9faf8;
     font-weight:1100;
+    margin: 0;
 }
 
 .random-info {
@@ -128,15 +130,9 @@ h1 {
     padding-bottom: 128px;
 }
 
-h2 {
-    font-size: 36px;
-    font-weight: 1200;
-    color: #1f2937;
-}
-
 .card-grid {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
     padding: 8px;
@@ -158,6 +154,13 @@ h2 {
 
 .card-text {
     padding-top: 8px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 1200;
+    color: #1f2937;
+    text-align: center;
 }
 
 .quote-section {
