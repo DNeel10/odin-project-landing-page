@@ -16,6 +16,7 @@ body {
     align-items: center;
     background-color: #1f2937;
     flex-wrap: wrap;
+    padding-top: 8px;
 }
 
 .header-logo {
